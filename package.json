@@ -16,6 +16,7 @@
     "prepare": "husky"
   },
   "dependencies": {
+    "@heroicons/vue": "^2.1.5",
     "@pinia/nuxt": "^0.5.3",
     "axios": "^1.7.3",
     "nuxt": "^3.13.0",
@@ -25,8 +26,8 @@
   },
   "devDependencies": {
     "@nuxt/eslint": "^0.5.0",
-    "@nuxtjs/tailwindcss": "^6.12.1",
     "@nuxt/test-utils": "^3.14.0",
+    "@nuxtjs/tailwindcss": "^6.12.1",
     "@vue/test-utils": "^2.4.6",
     "eslint": "^9.8.0",
     "happy-dom": "^14.12.3",
