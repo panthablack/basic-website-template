@@ -19,6 +19,9 @@
         <li>
           <NuxtLink to="/pinia">Pinia</NuxtLink>
         </li>
+        <li>
+          <NuxtLink to="/webgl">WebGL</NuxtLink>
+        </li>
       </ul>
     </div>
     <div class="loginLinksContainer">
