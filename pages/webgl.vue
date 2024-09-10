@@ -1,5 +1,5 @@
 <template>
-  <div class="webGLContainer flex justify-center items-center p-8">
+  <div class="webGLContainer flex justify-center items-center p-8 h-full">
     <client-only>
       <GraphicsWebglCanvas />
     </client-only>
@@ -9,3 +9,9 @@
 <script setup lang="ts">
 //
 </script>
+
+<style scoped lang="css">
+.webGLContainer {
+  min-height: 100vh;
+}
+</style>
