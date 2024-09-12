@@ -4,11 +4,10 @@ export const getCanvasFromId = (id: string) => {
   else throw 'Cannot initialise WebGL Store - Canvas missing.'
 }
 
-export const getContextOrAlert = (canvas: HTMLCanvasElement): WebGLRenderingContext => {
-  const context = canvas.getContext('webgl')
-  if (!context) {
-    alert('Unable to initialize WebGL. Your browser or machine may not support it.')
-    throw 'Cannot initialise WebGL - get context failed.'
-  }
-  return context
+export const getAspectRatio = (canvas: HTMLCanvasElement): number => {
+  // control for off screen canvas type and division by zero scenarios
+  const w = canvas?.clientWidth || 1
+  const h = canvas?.clientHeight || 1
+
+  return w / h
 }

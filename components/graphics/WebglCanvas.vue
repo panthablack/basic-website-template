@@ -10,6 +10,15 @@
 import { useWebGLStore } from '@/stores/webgl'
 const webGLStore = useWebGLStore()
 onMounted(() => {
-  webGLStore.start('webglcanvas')
+  const canvasId = 'webglcanvas'
+  webGLStore.start(canvasId)
+  const context = webGLStore.contexts[canvasId]
+  drawRectangle(context)
 })
 </script>
+
+<style scoped lang="css">
+.thing {
+  width: 14pn;
+}
+</style>
