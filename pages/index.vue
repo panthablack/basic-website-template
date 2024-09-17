@@ -1,7 +1,7 @@
 <template>
   <div class="homePageContainer">
     <Title>Home</Title>
-    <TailwindWithHeading />
+    <TailwindLandingPageWithHeading />
   </div>
 </template>
 
