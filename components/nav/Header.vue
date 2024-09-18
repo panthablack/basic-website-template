@@ -1,10 +1,10 @@
 <template>
-  <header class="absolute inset-x-0 top-0 z-50">
-    <TailwindNavbar
+  <header class="relative inset-x-0 top-0 z-50 w-full bg-blue-950">
+    <NavNavbar
       :mobile-menu-open
       @update:mobile-menu-open="mobileMenuOpen = $event"
     />
-    <TailwindMobileMenu
+    <NavMobileMenu
       :mobile-menu-open
       @update:mobile-menu-open="mobileMenuOpen = $event"
     />

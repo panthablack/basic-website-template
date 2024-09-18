@@ -1,16 +1,16 @@
 <template>
   <nav
-    class="flex items-center justify-between p-6 lg:px-8"
+    class="flex items-center justify-between p-6 lg:px-8 relative"
     aria-label="Global"
   >
     <div class="flex lg:flex-1">
-      <a
-        href="#"
+      <NuxtLink
+        to="/"
         class="-m-1.5 p-1.5"
       >
         <span class="sr-only">ManMachine</span>
         <LogosManMachine class="h-8 w-auto" />
-      </a>
+      </NuxtLink>
     </div>
     <div class="flex lg:hidden">
       <button
@@ -26,18 +26,18 @@
       </button>
     </div>
     <div class="hidden lg:flex lg:gap-x-12">
-      <a
+      <NuxtLink
         v-for="item in navigation"
         :key="item.name"
-        :href="item.href"
+        :to="item.href"
         class="text-sm font-semibold leading-6 text-white"
-      >{{ item.name }}</a>
+      >{{ item.name }}</NuxtLink>
     </div>
     <div class="hidden lg:flex lg:flex-1 lg:justify-end">
-      <a
-        href="#"
+      <NuxtLink
+        href="/auth/login"
         class="text-sm font-semibold leading-6 text-white"
-      >Log in <span aria-hidden="true">&rarr;</span></a>
+      >Log in <span aria-hidden="true">&rarr;</span></NuxtLink>
     </div>
   </nav>
 </template>
@@ -46,10 +46,11 @@
 import { Bars3Icon } from '@heroicons/vue/24/outline'
 
 const navigation = [
-  { name: 'Product', href: '#' },
-  { name: 'Features', href: '#' },
-  { name: 'Marketplace', href: '#' },
-  { name: 'Company', href: '#' },
+  { name: 'Home', href: '/' },
+  { name: 'About', href: '/about' },
+  { name: 'Contact', href: '/contact' },
+  { name: 'Pinia', href: '/pinia' },
+  { name: 'Web GL', href: '/webgl' },
 ]
 
 const emit = defineEmits(['update:mobile-menu-open'])
