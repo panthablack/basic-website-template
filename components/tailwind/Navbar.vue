@@ -8,12 +8,8 @@
         href="#"
         class="-m-1.5 p-1.5"
       >
-        <span class="sr-only">Your Company</span>
-        <img
-          class="h-8 w-auto"
-          src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
-          alt=""
-        >
+        <span class="sr-only">ManMachine</span>
+        <LogosManMachine class="h-8 w-auto" />
       </a>
     </div>
     <div class="flex lg:hidden">

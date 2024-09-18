@@ -1,11 +1,7 @@
 <template>
   <div class="bg-white">
-    <!-- Header -->
-    <TailwindHeading />
-
+    <TailwindHeader />
     <TailwindMain />
-
-    <!-- Footer -->
     <TailwindFooter />
   </div>
 </template>

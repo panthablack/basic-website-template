@@ -14,11 +14,7 @@
           class="-m-1.5 p-1.5"
         >
           <span class="sr-only">Your Company</span>
-          <img
-            class="h-8 w-auto"
-            src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
-            alt=""
-          >
+          <LogosManMachine class="h-8 w-auto" />
         </a>
         <button
           type="button"
@@ -65,9 +61,9 @@ const navigation = [
   { name: 'Company', href: '#' },
 ]
 
-const props = defineProps < {
+const props = defineProps<{
   mobileMenuOpen: boolean
-} > ()
+}>()
 
 const emit = defineEmits(['update:mobile-menu-open'])
 
