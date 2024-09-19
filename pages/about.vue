@@ -1,6 +1,6 @@
 <template>
   <div class="aboutPageContainer">
-    <h1>about</h1>
+    <PagesTitle>About</PagesTitle>
     <img
       src="/images/catz.jpg"
       alt="catz be trippin"
