@@ -1,7 +1,7 @@
 <template>
   <div class="webGLPageContainer h-full">
     <PagesTitle>Web GL</PagesTitle>
-    <div class="webGLContainer flex justify-center items-center p-8 h-full">
+    <div class="webGLContainer flex justify-center items-start p-8 h-full">
       <client-only>
         <GraphicsWebglCanvas />
       </client-only>
